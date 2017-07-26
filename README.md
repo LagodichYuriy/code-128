@@ -1,13 +1,13 @@
 # Code 128 generator
 Simple and standalone barcode generator for PHP. Supports 128B (Code Set B):
 
-* ASCII characters 32 to 127 (0–9, A–Z, a–z)
-* special characters
+* ASCII characters 32 to 127 (0–9, A–Z, a–z);
+* special characters;
 * FNC 1–4.
 
-# PHP requirements:
-* PHP 5.4+
-* GD library
+# PHP requirements
+* PHP 5.4+;
+* GD library.
 
 # Example #1: default usage
 
