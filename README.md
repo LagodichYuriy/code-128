@@ -21,4 +21,4 @@ $image = barcode::image('ABCDEF123456');
 imagejpeg($image, 'image.jpg');
 ```
 
-[[https://github.com/ThisNameWasFree/code-128/blob/master/images/image_1.jpg|alt=defaults]]
+![defaults](https://github.com/ThisNameWasFree/code-128/blob/master/images/image_1.jpg)
