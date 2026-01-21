@@ -1,22 +1,22 @@
 # Code 128 generator
-Simple and standalone barcode generator for PHP. Supports 128B (Code Set B):
+PHP barcode generator. Supports 128B (Code Set B):
 
 * ASCII characters 32 to 127 (0–9, A–Z, a–z);
 * special characters;
 * FNC 1–4.
 
 # PHP requirements
-* PHP 5.4+;
+* PHP 7+;
 * GD library.
 
-# Example #1: default usage
+# Example #1: default settings
 
 ```php
 <?php
 
-require_once 'barcode.php';
+require_once 'Barcode.php';
 
-$image = barcode::image('ABCDEF123456');
+$image = Barcode::make('ABCDEF123456');
 
 imagejpeg($image, 'image.jpg');
 ```
@@ -29,9 +29,9 @@ imagejpeg($image, 'image.jpg');
 ```php
 <?php
 
-require_once 'barcode.php';
+require_once 'Barcode.php';
 
-$image = barcode::image('ABCDEF123456', 80);
+$image = Barcode::make('ABCDEF123456', 80);
 
 imagejpeg($image, 'image.jpg');
 ```
@@ -44,9 +44,9 @@ imagejpeg($image, 'image.jpg');
 ```php
 <?php
 
-require_once 'barcode.php';
+require_once 'Barcode.php';
 
-$image = barcode::image('ABCDEF123456', 40, 2);
+$image = Barcode::make('ABCDEF123456', 40, 2);
 
 imagejpeg($image, 'image.jpg');
 ```
